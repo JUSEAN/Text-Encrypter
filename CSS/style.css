@@ -1,0 +1,107 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f2f5f8;
+}
+
+/* Contenedor principal */
+#cuerpo {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px; /* Ajustamos el padding para dispositivos móviles */
+  box-sizing: border-box; /* Añadimos la propiedad para que el padding no afecte al ancho del contenedor */
+}
+
+/* Contenedor del formulario */
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #003d5c;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+  max-height: 400px;
+  border-radius: 10px;
+  border: 2px solid #0077b6;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+#password {
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  border: 2px solid #0077b6;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+button {
+  background-color: #0077b6;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #003d5c;
+  transform: scale(1.1);
+}
+
+/* Reglas para pantallas móviles */
+@media (max-width: 767px) {
+  .container {
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-top: 0;
+  }
+  
+  textarea {
+    min-height: 100px;
+    max-height: none;
+    font-size: 14px;
+  }
+  
+  #password {
+    font-size: 14px;
+  }
+  
+  button {
+    font-size: 16px;
+  }
+}

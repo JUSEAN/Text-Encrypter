@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Jusean</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cuerpo">
+    <h1>Encriptador JSN</h1>
+    <div>
+      <label for="input">Texto a encriptar/desencriptar:</label>
+      <textarea id="input"></textarea>
+    </div>
+    <div>
+      <label for="password">Key:</label>
+      <input type="password" id="password">
+      <button id="encrypt-button" onclick="encrypt()">Encriptar</button>
+      <button id="decrypt-button" onclick="decrypt()">Desencriptar</button>
+    </div>
+    
+    <div>
+      <label for="output">Resultado:</label>
+      <textarea id="output"></textarea>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
