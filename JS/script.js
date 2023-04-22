@@ -26,3 +26,9 @@ function decrypt() {
     alert("Por favor, ingrese texto cifrado y una key.");
   }
 }
+
+function limpiarFormulario() {
+  document.getElementById("input").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("output").value = "";
+}
